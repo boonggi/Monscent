@@ -1,0 +1,102 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>매월 향으로 전하는 기억의 순간 Monscent</title>
+	<link rel="stylesheet" href="css/monscentStyle.css">
+	<link rel="stylesheet" href="css/fonts.css">
+	<link rel="stylesheet" href="css/simple-line-icons.css">
+	<!--bootstrap -->
+	<script src="js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+
+<body class="d-flex flex-column h-100">
+	
+	<!-- 공통 내비게이션 --->
+    <nav id="navbar" class="navbar navbar-expand-lg navbar-light monavi">
+        <div class="container-lg">
+			<a href="#" class="btn"><i class="icon-arrow-left"></i> Back</a>
+        </div>
+    </nav>
+	
+	<div class="container-fluid main-cont flex-grow-1">
+		<div class="article-box-wrap">
+			<div class="article-box d-flex flex-column">
+				<div class="atit-wrap p2">
+					<h2>새로운 비밀번호를<br>입력해 주세요</h2>
+					<span>비밀번호는 6자 이상으로 입력 하세요</span>
+				</div>
+                <div class="p2 flex-grow-1">
+					<div class="abox-cont">
+						<div class="mb-4">
+							<!-- form-control에 정보가 정확하면 is-valid, 잘못입력하면 is-invalid 클래스를 추가해 주세요 -->
+							<div class="input-group has-validation">
+								<input class="form-control binput" type="password" aria-describedby="checkPASS" placeholder="새로운 비밀번호를 입력하세요" required>
+								<div id="checkPASS" class="invalid-feedback">
+								비밀번호 6자 이상으로 입력 하세요
+								</div>
+							</div>
+							<div class="form-check pt-2">
+								<input type="checkbox" class="form-check-input">
+								<label class="form-check-label">비밀번호 보기</label>
+							</div>
+						</div>
+						<div class="mb-3 d-grid gap-3">
+							<a href="#" class="btn btn-xl btn-primary">비밀번호 재설정 완료</a>
+						</div>
+					</div>
+                </div>
+			</div>
+		</div>
+	</div>
+	
+	<!-- 공통 footer --->
+	<footer class="mt-auto">
+		<div class="container">
+			<div class="row">
+				<div class="col-12 foot-menu flex-row">
+					<ul class="p2 flex-grow-1">
+						<li><a href="#">로그인</a></li>
+						<li><a href="#">고객센터</a></li>
+						<li><a href="#">이용안내</a></li>
+						<li><a href="#">대량구매</a></li>
+					</ul>
+					<div class="p2 foot-logo">Monscent</div>
+				</div>
+				<div class="col-md-8 col-lg-6">
+					<div class="foot-company">
+						<span class="tit">㈜나인빌리언앤코</span>
+						<span>서울특별시 강남구 강남대로 464 비제바노BD 7층</span>
+						<span>monscent.contact@9billion.care ㅣ 사업자번호 223-87-01239</span>
+						<span>통신판매 제 2019-서울강남-02469호 ㅣ 대표자 김홍성</span>
+					</div>
+				</div>
+				<div class="col-md-4 col-lg-6">
+					<div class="foot-cs">
+						<span class="tit">CS center</span>
+						<span>070-8656-9610</span>
+						<span>평일 11:00 - 17:00</span>
+						<span>주말 및 공휴일 휴무</span>
+					</div>
+				</div>
+				<div class="col-12 foot-copy">Copyright ⓒ 나인빌리언앤코</div>
+			</div>
+		</div>
+	</footer>
+	
+	
+	<script>
+	var prevScrollpos = window.pageYOffset;
+	window.onscroll = function() {
+	var currentScrollPos = window.pageYOffset;
+	    if (prevScrollpos > currentScrollPos) {
+			document.getElementById("navbar").style.top = "0";
+	    } else {
+			document.getElementById("navbar").style.top = "-60px";
+	    }
+	  	prevScrollpos = currentScrollPos;
+	};
+	</script>
+</body>
+</html>

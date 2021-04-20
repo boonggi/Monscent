@@ -1,0 +1,383 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>매월 향으로 전하는 기억의 순간 Monscent</title>
+	<link rel="stylesheet" href="css/monscentStyle.css">
+	<link rel="stylesheet" href="css/fonts.css">
+	<link rel="stylesheet" href="css/simple-line-icons.css">
+	<!--bootstrap -->
+	<script src="js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+
+<body class="d-flex flex-column h-100">
+	
+	<!-- 공통 내비게이션 --->
+    <nav id="navbar" class="navbar navbar-expand-lg navbar-light monavi">
+        <div class="container-lg">
+			<a href="#" class="btn"><i class="icon-arrow-left"></i> Back</a>
+        </div>
+    </nav>
+	
+	<div class="container-fluid main-cont max-limit">
+		<div class="cont-wrapper">
+			<div class="main-box">
+				<div class="atit-wrap p2">
+					<h2><i class="icon-credit-card"></i> 결제하기</h2>
+					<span>결제정보와 배송지 변경은<br>마이페이지에서 변경 하실 수 있습니다.</span>
+				</div>
+                <div class="delivery-wrap">
+                    <div class="sub-title-wrap">
+                        <h3 class="title">배송지 정보</h3>
+						<a href="#manage-adress" data-bs-toggle="modal" data-bs-target="#manage-adress">배송지 목록 &#62;</a>
+                    </div>
+                    <ul class="delivery-info">
+                        <li class="name"><i class="adress-badge">기본배송지</i> 백현수</li>
+                        <li class="adress">&#91;12227&#93; 경기도 남양주시 의안로 176번길 중흥에스클래스 3차 2205동 1503호</li>
+                        <li class="tel">010-9778-3525</li>
+                        <li class="pt-1"><a href="#" class="btn btn-sm btn-outline-primary" data-bs-toggle="modal" data-bs-target="#edit-adress"><i class="icon-pencil"></i> 배송정보 수정</a></li>
+                    </ul>
+					<br>
+					<div class="gray-box">
+						<span class="big-icon"><i class="icon-map"></i></span>
+						<span class="form-info text-center">배송지 정보가 없습니다.<br>배송지 정보를 등록해 주세요.</span>
+						<div class="d-grid">
+							<a href="#" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#add-adress">배송지 등록</a>
+						</div>
+					</div>
+                </div>
+                <div class="order-check">
+                    <div class="sub-title-wrap">
+                        <h3 class="title">구독하신 상품</h3>
+                    </div>
+					<ul class="item-wrap">
+						<li class="item-goods">
+                            <div class="item-thumb">
+                                <img src="images/thumb1.jpg" alt="제품 썸네일">
+                            </div>
+                            <div class="item-info">
+                                <span class="name">Cabin in the Woods</span>
+                                <ul class="info">
+                                    <li>디퓨저 용액 : Cabin in the Woods&#40;30ml&#41;</li>
+                                    <li>리드 : 고압축 섬유스틱&#40;5개&#41;</li>
+                                    <li>용기 : 베이직 스퀘어&#40;1개&#41;</li>
+                                </ul>
+                            </div>
+							<div class="price-wrap">
+								<span class="price">9,900원</span>
+								<span class="qty">1개</span>
+							</div>
+						</li>
+						<li class="item-goods">
+                            <div class="item-thumb">
+                                <img src="images/thumb2.jpg" alt="제품 썸네일">
+                            </div>
+                            <div class="item-info">
+                                <span class="name">Island Sunset</span>
+                                <ul class="info">
+                                    <li>디퓨저 용액 : Island Sunset&#40;30ml&#41;</li>
+                                    <li>리드 : 고압축 섬유스틱&#40;5개&#41;</li>
+                                    <li>용기 : 베이직 스퀘어&#40;1개&#41;</li>
+                                </ul>
+                            </div>
+							<div class="price-wrap">
+								<span class="price">9,900원</span>
+								<span class="qty">1개</span>
+							</div>
+						</li>
+					</ul>
+                </div>				
+			</div>
+			<div class="sub-box">
+                <div class="sub-title-wrap">
+                    <h3 class="title">결제정보</h3>
+                </div>
+                <ul class="payment-info">
+                    <li>
+                        <span>상품금액</span>
+                        <span>22,000원</span>
+                    </li>
+                    <li>
+                        <span>배송비</span>
+                        <span>0원</span>
+                    </li>
+                    <li>
+                        <span>할인금액</span>
+                        <span><i class="sale-badge">10%구독할인</i> -2,200원</span>
+                    </li>
+                    <li>
+                        <span>결제 예정 금액</span>
+                        <span>19,800원</span>
+                    </li>
+                </ul>
+				<div class="payment-sel">
+                    <div class="sub-title-wrap">
+                        <h3 class="title">결제수단 선택</h3>
+                    </div>
+					<div class="d-grid pay-button">
+						<input type="radio" class="btn-check" name="options" id="option1" autocomplete="off">
+						<label class="btn btn-outline-primary" for="option1"><img src="images/kakaopay.png" alt="kakao pay logo">카카오 페이</label>
+
+						<input type="radio" class="btn-check" name="options" id="option2" autocomplete="off">
+						<label class="btn btn-outline-primary" for="option2"><img src="images/naverpay.png" alt="naver pay logo">네이버 페이</label>
+
+						<input type="radio" class="btn-check" name="options" id="option3" autocomplete="off">
+						<label class="btn btn-outline-primary" for="option3"><img src="images/creditcard.png" alt="credit card icon">신용카드</label>
+					</div>
+				</div>
+                <span class="form-info text-center p-4">주문 내용을 확인 하였으며,<br>구독서비스 가입 및 구독 결제에 동의 합니다.</span>
+				<div class="d-grid">
+					<a href="#" class="btn btn-xl btn-primary">결제하기</a>				
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- 공통 footer --->
+	<footer class="mt-auto">
+		<div class="container">
+			<div class="row">
+				<div class="col-12 foot-menu flex-row">
+					<ul class="p2 flex-grow-1">
+						<li><a href="#">로그인</a></li>
+						<li><a href="#">고객센터</a></li>
+						<li><a href="#">이용안내</a></li>
+						<li><a href="#">대량구매</a></li>
+					</ul>
+					<div class="p2 foot-logo">Monscent</div>
+				</div>
+				<div class="col-md-8 col-lg-6">
+					<div class="foot-company">
+						<span class="tit">㈜나인빌리언앤코</span>
+						<span>서울특별시 강남구 강남대로 464 비제바노BD 7층</span>
+						<span>monscent.contact@9billion.care ㅣ 사업자번호 223-87-01239</span>
+						<span>통신판매 제 2019-서울강남-02469호 ㅣ 대표자 김홍성</span>
+					</div>
+				</div>
+				<div class="col-md-4 col-lg-6">
+					<div class="foot-cs">
+						<span class="tit">CS center</span>
+						<span>070-8656-9610</span>
+						<span>평일 11:00 - 17:00</span>
+						<span>주말 및 공휴일 휴무</span>
+					</div>
+				</div>
+				<div class="col-12 foot-copy">Copyright ⓒ 나인빌리언앤코</div>
+			</div>
+		</div>
+	</footer>
+	
+	<!-- 배송지 모달 -->
+	<div class="modal slide-right" id="manage-adress" tabindex="-1" aria-hidden="true">
+		<div class="modal-dialog side-canvas">
+			<div class="modal-content side-wrap">
+				<div class="side-header">
+					<h3>배송지 목록</h3>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<div class="side-body">
+					<div class="d-grid adress-list">
+						<input type="radio" class="btn-check" name="Adress" id="adress1" autocomplete="off" checked>
+						<label class="adress-box" for="adress1">
+							<ul class="delivery-info">
+								<li class="name"><i class="adress-badge">기본배송지</i> 백현수</li>
+								<li class="adress">&#91;12227&#93; 경기도 남양주시 의안로 176번길 중흥에스클래스 3차 2205동 1503호</li>
+								<li class="tel">010-9778-3525</li>
+							</ul>
+							<div class="checkmark-wrap">
+								<i class="checkmark-icon"></i>
+							</div>
+						</label>
+
+						<input type="radio" class="btn-check" name="Adress" id="adress2" autocomplete="off">
+						<label class="adress-box" for="adress2">
+							<ul class="delivery-info">
+								<li class="name">백현수</li>
+								<li class="adress">&#91;12227&#93; 경기도 남양주시 의안로 176번길 중흥에스클래스 3차 2205동 1503호</li>
+								<li class="tel">010-9778-3525</li>
+							</ul>
+							<div class="checkmark-wrap">
+								<i class="checkmark-icon"></i>
+							</div>
+						</label>
+
+						<input type="radio" class="btn-check" name="Adress" id="adress3" autocomplete="off">
+						<label class="adress-box" for="adress3">
+							<ul class="delivery-info">
+								<li class="name">백현수</li>
+								<li class="adress">&#91;12227&#93; 경기도 남양주시 의안로 176번길 중흥에스클래스 3차 2205동 1503호</li>
+								<li class="tel">010-9778-3525</li>
+							</ul>
+							<div class="checkmark-wrap">
+								<i class="checkmark-icon"></i>
+							</div>
+						</label>
+						
+						<input type="radio" class="btn-check" name="Adress" id="adress4" autocomplete="off">
+						<label class="adress-box" for="adress4">
+							<ul class="delivery-info">
+								<li class="name">백현수</li>
+								<li class="adress">&#91;12227&#93; 경기도 남양주시 의안로 176번길 중흥에스클래스 3차 2205동 1503호</li>
+								<li class="tel">010-9778-3525</li>
+							</ul>
+							<div class="checkmark-wrap">
+								<i class="checkmark-icon"></i>
+							</div>
+						</label>
+					</div>
+				</div>
+                <div class="d-grid side-btnwrap">
+                    <a href="#" class="btn btn-xl btn-primary">선택완료</a>
+                </div>
+			</div>
+		</div>
+	</div>
+	
+	<!-- 배송지 입력 모달 -->
+	<div class="modal slide-right" id="add-adress" tabindex="-1" aria-hidden="true">
+		<div class="modal-dialog side-canvas">
+			<div class="modal-content side-wrap">
+				<div class="side-header">
+					<h3>배송지 등록</h3>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<div class="side-body">
+					<div class="adress-form-wrap">
+						<form class="form-adress">
+							<div class="row g-3">
+								<div class="col-md-12">
+									<label class="visually-hidden">받는사람</label>
+									<input type="text" class="form-control" placeholder="받는사람">
+								</div>
+								<div class="col-5">
+									<button class="btn btn-primary w-100" type="button">주소찾기</button>
+								</div>
+								<div class="col-7">
+									<label class="visually-hidden">우편번호</label>
+									<input type="text" class="form-control" placeholder="우편번호">
+								</div>
+								<div class="col-12">
+									<label class="visually-hidden">주소</label>
+									<input type="text" class="form-control" placeholder="">
+								</div>
+								<div class="col-12">
+									<label class="visually-hidden">상세주소</label>
+									<input type="text" class="form-control" placeholder="상세주소">
+								</div>
+								
+								<div class="col-4">
+									<select class="form-select">
+										<option>010</option>
+										<option>011</option>
+										<option>016</option>
+										<option>018</option>
+										<option>019</option>
+									</select>
+								</div>
+								<div class="col-4">
+									<input type="tel" class="form-control">
+								</div>
+								<div class="col-4">
+									<input type="tel" class="form-control">
+								</div>
+								<div class="col-12 pt-2">
+									<label class="checkbox-lg">기본 배송지로 지정하기 
+										<input type="checkbox" >
+										<span class="checkmark"></span>
+									</label>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+                <div class="d-grid side-btnwrap">
+                    <a href="#" class="btn btn-xl btn-primary">등록하기</a>
+                </div>
+			</div>
+		</div>
+	</div>
+	
+	<!-- 배송지 수정 모달 -->
+	<div class="modal slide-right" id="edit-adress" tabindex="-1" aria-hidden="true">
+		<div class="modal-dialog side-canvas">
+			<div class="modal-content side-wrap">
+				<div class="side-header">
+					<h3>배송지 수정</h3>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<div class="side-body">
+					<div class="adress-form-wrap">
+						<form class="form-adress">
+							<div class="row g-3">
+								<div class="col-md-12">
+									<label class="visually-hidden">받는사람</label>
+									<input type="text" class="form-control" placeholder="받는사람">
+								</div>
+								<div class="col-4">
+									<button class="btn btn-primary w-100" type="button">주소찾기</button>
+								</div>
+								<div class="col-8">
+									<label class="visually-hidden">우편번호</label>
+									<input type="text" class="form-control" placeholder="우편번호">
+								</div>
+								<div class="col-12">
+									<label class="visually-hidden">주소</label>
+									<input type="text" class="form-control" placeholder="">
+								</div>
+								<div class="col-12">
+									<label class="visually-hidden">상세주소</label>
+									<input type="text" class="form-control" placeholder="상세주소">
+								</div>
+								
+								<div class="col-4">
+									<select class="form-select">
+										<option>010</option>
+										<option>011</option>
+										<option>016</option>
+										<option>018</option>
+										<option>019</option>
+									</select>
+								</div>
+								<div class="col-4">
+									<input type="text" class="form-control">
+								</div>
+								<div class="col-4">
+									<input type="text" class="form-control">
+								</div>
+								<div class="col-12">
+									<label class="checkbox-lg">기본 배송지로 지정하기 
+										<input type="checkbox" >
+										<span class="checkmark"></span>
+									</label>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+                <div class="d-grid side-btnwrap">
+                    <a href="#" class="btn btn-xl btn-primary">확인</a>
+                </div>
+			</div>
+		</div>
+	</div>
+	
+	
+	<script>
+	var prevScrollpos = window.pageYOffset;
+	window.onscroll = function() {
+	var currentScrollPos = window.pageYOffset;
+	    if (prevScrollpos > currentScrollPos) {
+			document.getElementById("navbar").style.top = "0";
+	    } else {
+			document.getElementById("navbar").style.top = "-54px";
+	    }
+	  	prevScrollpos = currentScrollPos;
+	};
+	$(document).ready(function () {
+	  $('[data-toggle="offcanvas"]').click(function () {
+		$('.row-offcanvas').toggleClass('active')
+	  });
+	});
+	</script>
+</body>
+</html>

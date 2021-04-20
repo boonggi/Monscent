@@ -1,0 +1,268 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>매월 향으로 전하는 기억의 순간 Monscent</title>
+	<link rel="stylesheet" href="css/monscentStyle.css">
+	<link rel="stylesheet" href="css/fonts.css">
+	<link rel="stylesheet" href="css/simple-line-icons.css">
+	<!--bootstrap -->
+	<script src="js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+
+<body class="d-flex flex-column h-100">
+	
+	<!-- 공통 내비게이션 --->
+    <nav id="navbar" class="navbar navbar-expand-lg navbar-light monavi">
+        <div class="container-fluid max-limit">
+			<button type="button" class="navbar-toggler navbtn" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+            <a href="#" class="navbar-brand logo"><img src="images/logo.png" width="90px" alt="Monscent Logo Image"></a>
+            <div class="collapse navbar-collapse navmenu" id="navbarNav">
+                <ul class="navbar-nav flex-grow-1 justify-content-start">
+                    <li class="nav-item">
+                        <a href="" class="nav-link">
+							구독하기
+							<i class="icon-arrow-right"></i>
+						</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link">
+							상품보기
+							<i class="icon-arrow-right"></i>
+						</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link">
+							월간향스토리
+							<i class="icon-arrow-right"></i>
+						</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link">
+							고객센터
+							<i class="icon-arrow-right"></i>
+						</a>
+                    </li>
+                </ul>
+                <form class="d-flex user-wrap">
+                    <a href="#">로그인</a>
+                </form>
+            </div>
+			<div class="cart">
+				<button type="button" class="btn-cart" data-bs-toggle="modal" data-bs-target="#Cartbox">
+					<i class="icon-basket"></i>
+				</button>
+			</div>
+        </div>
+    </nav>
+	<div class="container-fluid main-cont flex-grow-1 max-limit">
+		<div class="cont-wrapper">
+			<div class="aside user-box">
+                <div class="user-name">
+					<div>
+						<span class="name">사과</span>님<br>
+						안녕하세요!
+					</div>
+					<div>
+						<a href="#" class="btn btn-sm btn-outline-primary">정보수정</a>
+						<a href="#" class="btn btn-sm btn-outline-primary">로그아웃</a>
+					</div>
+                </div>
+                <ul class="my-menu">
+                    <li>
+                        <a href="#" class="active">구독관리</a>
+                    </li>
+                    <li>
+                        <a href="#">주문조회</a>
+                    </li>
+                </ul>
+			</div>
+			<div class="main">
+				<!--구독중인 상품이 없을 경우 아래의 empty-cont를 노출 시킵니다.
+				<div class="empty-cont">
+					<img src="images/icon-diffuser.png" alt="diffuser icon">
+					<span class="text">
+						합리적인 천연향 디퓨저<br>
+						Monscent를 시작해 보세요
+					</span>
+					<a href="#" class="btn btn-xl btn-primary">구독 시작하기</a>
+				</div>
+				-->
+				<section class="item-cont">
+                    <div class="sub-title-wrap">
+                        <h3 class="title">구독 리스트</h3>
+                    </div>
+					<ul class="item-wrap">
+						<li class="item-goods">
+                            <div class="item-thumb">
+                                <img src="images/thumb1.jpg" alt="제품 썸네일">
+                            </div>
+                            <div class="item-info">
+                                <span class="name">Cabin in the Woods</span>
+                                <ul class="info">
+                                    <li>디퓨저 용액 : Cabin in the Woods&#40;30ml&#41;</li>
+                                    <li>리드 : 고압축 섬유스틱&#40;5개&#41;</li>
+                                    <li>용기 : 베이직 스퀘어&#40;1개&#41;</li>
+                                </ul>
+                            </div>
+							<div class="price-wrap">
+								<span class="price">9,900원</span>
+								<span class="qty">1개</span>
+							</div>
+						</li>
+						<li class="item-goods">
+                            <div class="item-thumb">
+                                <img src="images/thumb2.jpg" alt="제품 썸네일">
+                            </div>
+                            <div class="item-info">
+                                <span class="name">Island Sunset</span>
+                                <ul class="info">
+                                    <li>디퓨저 용액 : Island Sunset&#40;30ml&#41;</li>
+                                    <li>리드 : 고압축 섬유스틱&#40;5개&#41;</li>
+                                    <li>용기 : 베이직 스퀘어&#40;1개&#41;</li>
+                                </ul>
+                            </div>
+							<div class="price-wrap">
+								<span class="price">9,900원</span>
+								<span class="qty">1개</span>
+							</div>
+						</li>
+					</ul>
+                    <div class="d-grid">
+                        <a href="#" class="btn btn-outline-primary">+ 구독상품 추가하기</a>
+                    </div>
+                    <span>
+                        에코할인 설정은 구독상품 상세정보에서 설정 하실 수 있습니다.
+                    </span>
+				</section>
+				<section class="payment">
+                    <div class="sub-title-wrap">
+                        <h3 class="title">결제정보</h3>
+                    </div>
+                    <ul class="payment-info">
+                        <li>
+                            <span>상품금액</span>
+                            <span>22,000원</span>
+                        </li>
+                        <li>
+                            <span>배송비</span>
+                            <span>0원</span>
+                        </li>
+                        <li>
+                            <span>할인금액</span>
+                            <span>-2,200원 <i class="badge bg-warning">10%구독할인</i></span>
+                        </li>
+                        <li>
+                            <span>결제 예정 금액</span>
+                            <span>19,800원</span>
+                        </li>
+                    </ul>
+                    <span class="form-info">다음달&#40;6개월&#41;부터 15% 구독 할인을 받을 수 있습니다.</span>
+                    <ul class="payment-setting">
+                        <li>
+                            <span class="tt"><i class="icon-event"></i> 다음 결제 예정일</span>
+                            <span class="tx">2021년 2월 14일 결제 예정</span>
+                            <a href="#"><i class="icon-arrow-right"></i></a>
+                        </li>
+                        <li>
+                            <span class="tt"><i class="icon-reload"></i> 구독주기</span>
+                            <span class="tx">4주 마다</span>
+                            <a href="#"><i class="icon-arrow-right"></i></a>
+                        </li>
+                        <li>
+                            <span class="tt"><i class="icon-pin"></i> 배송지</span>
+                            <span class="tx">
+                                &#40;12227&#41;경기도 남양주시 의안로 176번길 중흥에스클레스 3차 2205동 1503호
+                            </span>
+                            <a href="#"><i class="icon-arrow-right"></i></a>
+                        </li>
+                        <li>
+                            <span class="tt"><i class="icon-credit-card"></i> 결제수단</span>
+                            <span class="tx">카카오페이</span>
+                            <a href="#"><i class="icon-arrow-right"></i></a>
+                        </li>
+                    </ul>
+				</section>
+			</div>
+		</div>
+	</div>
+	
+	<!-- 공통 footer --->
+	<footer class="mt-auto">
+		<div class="container">
+			<div class="row">
+				<div class="col-12 foot-menu flex-row">
+					<ul class="p2 flex-grow-1">
+						<li><a href="#">로그인</a></li>
+						<li><a href="#">고객센터</a></li>
+						<li><a href="#">대량구매</a></li>
+						<li><a href="#">1:1문의</a></li>
+					</ul>
+					<div class="p2 foot-logo">Monscent</div>
+				</div>
+				<div class="col-md-8 col-lg-6">
+					<div class="foot-company">
+						<span class="tit">㈜나인빌리언앤코</span>
+						<span>서울특별시 강남구 강남대로 464 비제바노BD 7층</span>
+						<span>monscent.contact@9billion.care ㅣ 사업자번호 223-87-01239</span>
+						<span>통신판매 제 2019-서울강남-02469호 ㅣ 대표자 김홍성</span>
+					</div>
+				</div>
+				<div class="col-md-4 col-lg-6">
+					<div class="foot-cs">
+						<span class="tit">CS center</span>
+						<span>070-8656-9610</span>
+						<span>평일 11:00 - 17:00</span>
+						<span>주말 및 공휴일 휴무</span>
+					</div>
+				</div>
+				<div class="col-12 foot-copy">Copyright ⓒ 나인빌리언앤코</div>
+			</div>
+		</div>
+	</footer>
+	
+	
+	<!-- 장바구니 모달 -->
+	<div class="modal slide-right" id="Cartbox" tabindex="-1" aria-labelledby="MyCart" aria-hidden="true">
+		<div class="modal-dialog cartbox">
+			<div class="modal-content side-wrap">
+				<div class="side-header">
+					<h3>장바구니</h3>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<div class="side-body">
+					<ul class="cart-items">
+						<li class="product-item">
+						제품1 TBD
+						</li>
+						<li class="product-item">
+						제품2 TBD
+						</li>
+					</ul>
+				</div>
+                <div class="d-grid gap-2 cart-btnwrap">
+                    <a href="#" class="btn btn-xl btn-primary">결제하기</a>
+                </div>
+			</div>
+		</div>
+	</div>
+	
+	<script>
+	var prevScrollpos = window.pageYOffset;
+	window.onscroll = function() {
+	var currentScrollPos = window.pageYOffset;
+	    if (prevScrollpos > currentScrollPos) {
+			document.getElementById("navbar").style.top = "0";
+	    } else {
+			document.getElementById("navbar").style.top = "-60px";
+	    }
+	  	prevScrollpos = currentScrollPos;
+	};
+	</script>
+</body>
+</html>

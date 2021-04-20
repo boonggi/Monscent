@@ -1,0 +1,117 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>매월 향으로 전하는 기억의 순간 Monscent</title>
+	<link rel="stylesheet" href="css/monscentStyle.css">
+	<link rel="stylesheet" href="css/fonts.css">
+	<link rel="stylesheet" href="css/simple-line-icons.css">
+	<!--bootstrap -->
+	<script src="js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+
+<body class="d-flex flex-column h-100">
+	
+	<!-- 공통 내비게이션 --->
+    <nav id="navbar" class="navbar navbar-expand-lg navbar-light monavi">
+        <div class="container-lg">
+			<button type="button" class="navbar-toggler navbtn" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+            <a href="#" class="navbar-brand logo"><img src="images/logo.png" width="90px" alt="Monscent Logo Image"></a>
+            <div class="collapse navbar-collapse navmenu" id="navbarNav">
+                <ul class="navbar-nav flex-grow-1 justify-content-start">
+                    <li class="nav-item">
+                        <a href="" class="nav-link">구독하기</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link">상품보기</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link">월간향스토리</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link">고객센터</a>
+                    </li>
+                </ul>
+                <form class="d-flex user-wrap">
+                    <a href="#">로그인</a>
+                </form>
+            </div>
+			<div class="cart">
+				<button type="button" class="btn-cart" data-bs-toggle="modal" data-bs-target="#Cartbox">
+					<i class="icon-basket"></i>
+				</button>
+			</div>
+        </div>
+    </nav>
+	
+	<div class="container-fluid main-cont flex-grow-1">
+		<div class="article-box-wrap">
+			<div class="article-box d-flex flex-column back-pic">
+				<div class="atit-wrap p2">
+					<h2>로그인과 회원가입을<br>시작합니다!</h2>
+					<span>카카오와 이메일로 빠르게 시작 하실 수 있어요</span>
+				</div>
+                <div class="p2 flex-grow-1">
+					<div class="d-grid gap-4 abox-cont">
+                    	<a href="#" class="btn btn-xl btn-kakao"><i class="icon-katalk"></i> 카카오로 시작합니다.</a>
+                    	<a href="#" class="btn btn-xl btn-outline-primary"><i class="icon-envelope"></i> 이메일로 시작합니다.</a>
+					</div>
+                </div>
+			</div>
+		</div>
+	</div>
+	
+	<!-- 공통 footer --->
+	<footer class="mt-auto">
+		<div class="container">
+			<div class="row">
+				<div class="col-12 foot-menu flex-row">
+					<ul class="p2 flex-grow-1">
+						<li><a href="#">로그인</a></li>
+						<li><a href="#">고객센터</a></li>
+						<li><a href="#">이용안내</a></li>
+						<li><a href="#">대량구매</a></li>
+					</ul>
+					<div class="p2 foot-logo">Monscent</div>
+				</div>
+				<div class="col-md-8 col-lg-6">
+					<div class="foot-company">
+						<span class="tit">㈜나인빌리언앤코</span>
+						<span>서울특별시 강남구 강남대로 464 비제바노BD 7층</span>
+						<span>monscent.contact@9billion.care ㅣ 사업자번호 223-87-01239</span>
+						<span>통신판매 제 2019-서울강남-02469호 ㅣ 대표자 김홍성</span>
+					</div>
+				</div>
+				<div class="col-md-4 col-lg-6">
+					<div class="foot-cs">
+						<span class="tit">CS center</span>
+						<span>070-8656-9610</span>
+						<span>평일 11:00 - 17:00</span>
+						<span>주말 및 공휴일 휴무</span>
+					</div>
+				</div>
+				<div class="col-12 foot-copy">Copyright ⓒ 나인빌리언앤코</div>
+			</div>
+		</div>
+	</footer>
+	
+	
+	<script>
+	var prevScrollpos = window.pageYOffset;
+	window.onscroll = function() {
+	var currentScrollPos = window.pageYOffset;
+	    if (prevScrollpos > currentScrollPos) {
+			document.getElementById("navbar").style.top = "0";
+	    } else {
+			document.getElementById("navbar").style.top = "-60px";
+	    }
+	  	prevScrollpos = currentScrollPos;
+	};
+	</script>
+</body>
+</html>

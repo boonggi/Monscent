@@ -1,0 +1,298 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>매월 향으로 전하는 기억의 순간 Monscent</title>
+	<link rel="stylesheet" href="css/monscentStyle.css">
+	<link rel="stylesheet" href="css/fonts.css">
+	<link rel="stylesheet" href="css/simple-line-icons.css">
+	<!--bootstrap -->
+	<script src="js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+
+<body class="d-flex flex-column h-100">
+	
+	<!-- 공통 내비게이션 --->
+    <nav id="navbar" class="navbar navbar-expand-lg navbar-light monavi">
+        <div class="container-lg">
+			<a href="#" class="btn"><i class="icon-arrow-left"></i> Back</a>
+        </div>
+    </nav>
+	
+	<div class="container-fluid main-cont max-limit">
+		<div class="cont-wrapper">
+			<div class="main-box">
+				<div class="atit-wrap p2">
+					<h2><i class="icon-bag"></i> 주문확인</h2>
+					<span>구독하신 상품의 주기와 향의 변경은<br>마이페이지에서 자유롭게 변경 가능 합니다.</span>
+				</div>
+                <div class="order-check">
+                    <div class="sub-title-wrap">
+                        <h3 class="title">오늘 결제</h3>
+                    </div>
+					<ul class="item-wrap">
+						<li class="item-goods">
+                            <div class="item-thumb">
+                                <img src="images/thumb1.jpg" alt="제품 썸네일">
+                            </div>
+                            <div class="item-info">
+                                <span class="name">Cabin in the Woods</span>
+                                <ul class="info">
+                                    <li>디퓨저 용액 : Cabin in the Woods&#40;30ml&#41;</li>
+                                    <li>리드 : 고압축 섬유스틱&#40;5개&#41;</li>
+                                    <li>용기 : 베이직 스퀘어&#40;1개&#41;</li>
+                                </ul>
+                            </div>
+							<div class="qty-wrap">
+								<div class="btn-group" role="group">
+									<button class="btn btn-sm btn-outline-primary">-</button>
+									<input type="text" disabled value="10">
+									<button class="btn btn-sm btn-outline-primary">+</button>
+								</div>
+							</div>
+							<div class="price-wrap">
+								<span class="price">9,900원</span>
+							</div>
+						</li>
+						<li class="item-goods">
+                            <div class="item-thumb">
+                                <img src="images/thumb2.jpg" alt="제품 썸네일">
+                            </div>
+                            <div class="item-info">
+                                <span class="name">Island Sunset</span>
+                                <ul class="info">
+                                    <li>디퓨저 용액 : Island Sunset&#40;30ml&#41;</li>
+                                    <li>리드 : 고압축 섬유스틱&#40;5개&#41;</li>
+                                    <li>용기 : 베이직 스퀘어&#40;1개&#41;</li>
+                                </ul>
+                            </div>
+							<div class="qty-wrap">
+								<div class="btn-group" role="group">
+									<button class="btn btn-sm btn-outline-primary">-</button>
+									<input type="text" disabled value="1">
+									<button class="btn btn-sm btn-outline-primary">+</button>
+								</div>
+							</div>
+							<div class="price-wrap">
+								<span class="price">9,900원</span>
+							</div>
+						</li>
+					</ul>
+					<a href="#" class="btn btn-outline-primary btn-add-item" data-bs-toggle="modal" data-bs-target="#Scentbox">+ 구독상품 추가하기</a>
+                </div>
+                <div class="next-order">
+                    <div class="sub-title-wrap">
+                        <h3 class="title">4주 뒤 결제 <span>&#40;5월 15일&#41;</span></h3>
+						<span><i class="icon-refresh"></i> 4주마다 결제</span>
+                    </div>
+					<ul class="item-wrap">
+						<li class="item-goods">
+                            <div class="item-thumb">
+                                <img src="images/thumb1.jpg" alt="제품 썸네일">
+                            </div>
+                            <div class="item-info">
+                                <span class="name">Cabin in the Woods</span>
+                                <ul class="info">
+                                    <li>디퓨저 용액 : Cabin in the Woods&#40;30ml&#41;</li>
+                                    <li>리드 : 고압축 섬유스틱&#40;5개&#41;</li>
+                                    <li>용기 : 베이직 스퀘어&#40;1개&#41;</li>
+                                </ul>
+                            </div>
+							<div class="price-wrap">
+								<span class="price">9,900원</span>
+								<span class="qty">1개</span>
+							</div>
+						</li>
+						<li class="item-goods">
+                            <div class="item-thumb">
+                                <img src="images/thumb2.jpg" alt="제품 썸네일">
+                            </div>
+                            <div class="item-info">
+                                <span class="name">Island Sunset</span>
+                                <ul class="info">
+                                    <li>디퓨저 용액 : Island Sunset&#40;30ml&#41;</li>
+                                    <li>리드 : 고압축 섬유스틱&#40;5개&#41;</li>
+                                    <li>용기 : 베이직 스퀘어&#40;1개&#41;</li>
+                                </ul>
+                            </div>
+							<div class="price-wrap">
+								<span class="price">9,900원</span>
+								<span class="qty">1개</span>
+							</div>
+						</li>
+					</ul>
+					<!--
+                    <div class="gray-box mt-3">
+                        <label class="checkbox-lg">디퓨저 용기 할인 신청하기 
+                            <input type="checkbox" >
+                            <span class="checkmark"></span>
+                        </label>
+                            용기 할인은 다음 제품 배송 할 때, 리필 용액과 리드만 보내 드리고 용기 값 3,000원을 제외하여 구매 금액을 절약 하실 수 있습니다.
+                    </div>
+                    <span class="form-info"><i class="icon-info"></i> 마이페이지에서도 신청과 취소를 하실 수 있습니다.</span>
+					-->
+                </div>				
+			</div>
+			<div class="sub-box">
+                <div class="sub-title-wrap">
+                    <h3 class="title">결제정보</h3>
+                </div>
+                <ul class="payment-info">
+                    <li>
+                        <span>상품금액</span>
+                        <span>22,000원</span>
+                    </li>
+                    <li>
+                        <span>배송비</span>
+                        <span>0원</span>
+                    </li>
+                    <li>
+                        <span>할인금액</span>
+                        <span><i class="sale-badge">10%구독할인</i> -2,200원</span>
+                    </li>
+                    <li>
+                        <span>결제 예정 금액</span>
+                        <span>19,800원</span>
+                    </li>
+                </ul>
+                <span class="form-info text-center p-4">주문 내용을 확인 하였으며,<br>구독서비스 가입 및 구독 결제에 동의 합니다.</span>
+				<div class="d-grid">
+					<a href="#" class="btn btn-xl btn-primary">주문 확인</a>				
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<!-- 공통 footer --->
+	<footer class="mt-auto">
+		<div class="container">
+			<div class="row">
+				<div class="col-12 foot-menu flex-row">
+					<ul class="p2 flex-grow-1">
+						<li><a href="#">로그인</a></li>
+						<li><a href="#">고객센터</a></li>
+						<li><a href="#">이용안내</a></li>
+						<li><a href="#">대량구매</a></li>
+					</ul>
+					<div class="p2 foot-logo">Monscent</div>
+				</div>
+				<div class="col-md-8 col-lg-6">
+					<div class="foot-company">
+						<span class="tit">㈜나인빌리언앤코</span>
+						<span>서울특별시 강남구 강남대로 464 비제바노BD 7층</span>
+						<span>monscent.contact@9billion.care ㅣ 사업자번호 223-87-01239</span>
+						<span>통신판매 제 2019-서울강남-02469호 ㅣ 대표자 김홍성</span>
+					</div>
+				</div>
+				<div class="col-md-4 col-lg-6">
+					<div class="foot-cs">
+						<span class="tit">CS center</span>
+						<span>070-8656-9610</span>
+						<span>평일 11:00 - 17:00</span>
+						<span>주말 및 공휴일 휴무</span>
+					</div>
+				</div>
+				<div class="col-12 foot-copy">Copyright ⓒ 나인빌리언앤코</div>
+			</div>
+		</div>
+	</footer>
+	
+	<!-- 향 선택 모달 -->
+	<div class="modal slide-right" id="Scentbox" tabindex="-1" aria-labelledby="Myscent" aria-hidden="true">
+		<div class="modal-dialog side-canvas">
+			<div class="modal-content side-wrap">
+				<div class="side-header">
+					<h3>향선택</h3>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<div class="side-body">
+					<div id="scent-sel" class="carousel carousel-dark slide" data-bs-interval="false" data-bs-ride="carousel">
+						<div class="carousel-indicators">
+							<button type="button" data-bs-target="#scent-sel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+							<button type="button" data-bs-target="#scent-sel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+							<button type="button" data-bs-target="#scent-sel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+							<button type="button" data-bs-target="#scent-sel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+						</div>
+						<div class="carousel-inner">
+							<div class="carousel-item active">
+								<div class="product prod-1">
+									<div class="inner-cont">
+										<div class="inner-info">
+											<img src="images/thumb1.jpg" alt="Leather Atelier Image">
+											<span class="tt">Leather Atelier</span>
+											<span class="ts">2013, Florence</span>
+											<span class="ss">작업대를 가득 메운 가죽들과 종이, 초크 그리고 조금 녹이 슬었지만 손에 익은 가위까지 피렌체 가죽 공방의 포근한 향기</span>
+										</div>
+										<a href="#" class="btn btn-xl btn-primary w-100">선택하기</a>
+									</div>
+								</div>
+							</div>
+							<div class="carousel-item">
+								<div class="product prod-2">
+									<div class="inner-cont">
+										<div class="inner-info">
+											<img src="images/thumb2.jpg" alt="Cabin in the Woods Image">
+											<span class="tt">Cabin in the Woods</span>
+											<span class="ts">1995, Pite Sweden</span>
+											<span class="ss">침엽수림 속 오두막집, 먼지가 앉은 방 안 과 화로 옆 쌓여있는 장작들과 걸을 때마다 삐걱 소리가 나는 마룻바닥을 표현한 향</span>
+										</div>
+                    					<a href="#" class="btn btn-xl btn-primary w-100">선택하기</a>
+									</div>
+								</div>
+							</div>
+							<div class="carousel-item">
+								<div class="product prod-3">
+									<div class="inner-cont">
+										<div class="inner-info">
+											<img src="images/thumb3.png" alt="Island Sunset Image">
+											<span class="tt">Island Sunset</span>
+											<span class="ts">2001, Malta</span>
+											<span class="ss">지중해 연안의 푸른 바다와 시원한 바람, 쨍한 햇빛의 온기 그리고 노을의 영롱함을 표현한 향</span>
+										</div>
+                    					<a href="#" class="btn btn-xl btn-primary w-100">선택하기</a>
+									</div>
+								</div>
+							</div>
+							<div class="carousel-item">
+								<div class="product">
+									<div class="inner-cont">
+										<div class="inner-info">
+											<img src="images/thumb2.jpg" alt="Dawn Garden Image">
+											<span class="tt">Dawn Garden</span>
+											<span class="ts">2006, Grindelwald</span>
+											<span class="ss">해 뜨기 직전의 새벽 시간 바닥을 빽빽히 메운 풀과 밤새 내뱉은 풀들의 숨결로 가득 찬 공기 사이사이 맺힌 이슬을 표현한 향</span>
+										</div>
+										<a href="#" class="btn btn-xl btn-primary w-100">선택하기</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<button class="carousel-control-prev" type="button" data-bs-target="#scent-sel" data-bs-slide="prev">
+							<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+							<span class="visually-hidden">Previous</span>
+						</button>
+						<button class="carousel-control-next" type="button" data-bs-target="#scent-sel" data-bs-slide="next">
+							<span class="carousel-control-next-icon" aria-hidden="true"></span>
+							<span class="visually-hidden">Next</span>
+						</button>
+					</div>
+				</div>
+                <a href="#" class="btn btn-xl btn-primary">선택하기</a>
+            </div>
+        </div>
+    </div>
+	<script>
+	var prevScrollpos = window.pageYOffset;
+	window.onscroll = function() {
+	var currentScrollPos = window.pageYOffset;
+	    if (prevScrollpos > currentScrollPos) {
+			document.getElementById("navbar").style.top = "0";
+	    } else {
+			document.getElementById("navbar").style.top = "-60px";
+	    }
+	  	prevScrollpos = currentScrollPos;
+	};
+	</script>
+</body>
+</html>
